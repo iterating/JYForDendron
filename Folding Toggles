@@ -1,0 +1,23 @@
+// Fold a selection and name it
+	"fold.selected": {
+		"prefix" : ["fold.selected"],
+		"body":
+			["<details><summary>$1",
+			"  </summary>",
+			"  ${TM_SELECTED_TEXT}",
+			"  </details>",
+			"$0"],
+		"description": "Creates a toggle fold on the selection"
+	},
+
+	// Fold a new section
+	"fold.new": {
+		"prefix" : ["fold.new"],
+		"body":
+			["<details><summary>$1",
+			"  </summary>",
+			"  $2",
+			"  </details>",
+			"  $0"],
+		"description": "Creates a new toggle fold"
+	},
